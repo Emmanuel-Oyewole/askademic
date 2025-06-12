@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from .routes.root import router as root_router
+from .controllers.root import router as root_router
 
 app = FastAPI(
     title="Askademic API",

@@ -80,6 +80,8 @@ dependencies = [
     "pydantic-settings>=2.9.1",
     "llama-index>=0.12.41",
     "llama-index-llms-google-genai>=0.2.1",
+    "llama-index-tools-yahoo-finance>=0.3.0",
+    "llama-index-tools-tavily-research>=0.3.0",
 ]
 
 [dependency-groups]
