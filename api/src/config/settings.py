@@ -8,3 +8,5 @@ class Settings(BaseSettings):
 
 
 print(Settings().gemini_api_key)
+
+settings = Settings()

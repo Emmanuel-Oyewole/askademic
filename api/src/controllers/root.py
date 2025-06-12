@@ -1,8 +1,11 @@
 from datetime import datetime, timezone
 from typing import Any
 from fastapi import APIRouter, Request
+from src.config.settings import settings
+
 
 router = APIRouter(tags=["Root"])
+api_key = settings.gemini_api_key
 
 
 @router.get("/")
@@ -43,3 +46,8 @@ async def health() -> dict[str, str]:
         "status": "ok",
         "timestamp": datetime.now(timezone.utc).isoformat(),
     }
+
+
+@router.get("/api-key")
+def test_env() -> dict[str, str]:
+    return {"api_key": str(api_key)}
