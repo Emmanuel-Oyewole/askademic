@@ -1,0 +1,9 @@
+# docker-compose.yml
+version: "3.8"
+services:
+  askademic-api:
+    build: .
+    ports:
+      - "8081:8081"
+    env_file:
+      - .env
