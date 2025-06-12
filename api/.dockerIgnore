@@ -1,0 +1,37 @@
+# Python-specific ignores
+*.pyc
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environment
+.venv/
+
+# Development related
+.vscode/
+.idea/
+
+# Temp files
+*.swp
+*.log
+tmp/
+temp/
+
+# Data files (if not needed in the image)
+data/
+
+# Secret
+.env
+.env.*
+
+# Docker 
+Dockerfile
+.dockerignore
+
+# Git
+.git/
+
+# Build artifacts
+build/
+dist/
+./rag/notebook
