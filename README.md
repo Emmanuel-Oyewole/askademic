@@ -50,3 +50,25 @@ The **Minimum Viable Product (MVP)** will initially be deployed for **Ahmadu Bel
 7. [**MongoDB**](https://www.mongodb.com/) – NoSQL database for storing user sessions, metadata, and documents  
 8. [**Jupyter Notebook**](https://jupyter.org/) – For experimentation, prototyping, and research
 
+---
+### Local Setup Instructions
+
+
+1. **Clone the Repository**
+    ```bash
+    git clone https://github.com/Emmanuel-Oyewole/askademic.git
+    cd api
+    ```
+2. **Build and Strat the Docker-Compose Service**
+    Create .env file in  `api/`
+     ```bash
+    docker-compose up --build
+     ```
+3. **Navigate to the Docs URL***
+    ```bash
+    http://localhost:8081/docs
+    ```
+4. **Stop the Docker Containers**
+    ```bash
+    docker-compose down
+    ```
