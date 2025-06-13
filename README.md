@@ -54,21 +54,28 @@ The **Minimum Viable Product (MVP)** will initially be deployed for **Ahmadu Bel
 ### Local Setup Instructions
 
 
-1. **Clone the Repository**
+1. **Clone the Repository:**
     ```bash
     git clone https://github.com/Emmanuel-Oyewole/askademic.git
     cd api
     ```
-2. **Build and Strat the Docker-Compose Service**
-    Create .env file in  `api/`
+2. **Set up environment variables:**
+    Create a `.env` file in the root directory and configure it based on the `.env.example` file.
+   
+    ```bash
+    cp .env.example .env
+   ```
+
+4. **Build and Start the Docker-Compose Service:**
+    
      ```bash
     docker-compose up --build
      ```
-3. **Navigate to the Docs URL***
+5. **Navigate to the Docs URL:**
     ```bash
     http://localhost:8081/docs
     ```
-4. **Stop the Docker Containers**
+6. **Stop the Docker Containers:**
     ```bash
     docker-compose down
     ```
